@@ -63,6 +63,7 @@ const settingsSkeleton = {
 	quickClassPicker: false,
 	fullscreen: 'windowed', // windowed, maximized, fullscreen, borderless
 	resourceSwapper: true,
+	autoLunarSwapper: false,
 	userscripts: false,
 	clientSplash: true,
 	immersiveSplash: false,
@@ -462,6 +463,7 @@ app.on('ready', () => {
 		const CrankshaftFilterHandlerInstance = new RequestHandler(mainWindow,
 			swapperPath,
 			userPrefs.resourceSwapper,
+			userPrefs.autoLunarSwapper,
 			userPrefs.hideAds === 'block',
 			userPrefs.customFilters,
 			readFileSync(pathJoin($assets, 'blockFilters.txt')).toString(),

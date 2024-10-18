@@ -78,6 +78,7 @@ const settingsDesc: SettingsDesc = {
 	fullscreen: { title: 'Start in Windowed/Fullscreen mode', type: 'sel', desc: "Use 'borderless' if you have client-capped fps and unstable fps in fullscreen", safety: 0, cat: 0, opts: ['windowed', 'maximized', 'fullscreen', 'borderless'] },
 	inProcessGPU: { title: 'In-Process GPU (video capture)', type: 'bool', desc: 'Enables video capture & embeds the GPU under the same process', safety: 1, cat: 0 },
 	resourceSwapper: { title: 'Resource swapper', type: 'bool', desc: 'Enable Krunker Resource Swapper. ', safety: 0, cat: 0 },
+	autoLunarSwapper: { title: 'Automatically Swap Lunar Eclipse Sounds', type: 'bool', desc: 'Lunar eclipse weapons will use the base sound in the resource swapper. Has no effect if the resource swapper is off.', safety: 0, cat: 0 },
 	discordRPC: { title: 'Discord Rich Presence', type: 'bool', desc: 'Enable Discord Rich Presence. Shows Gamemode, Map, Class and Skin', safety: 0, cat: 0 },
 	extendedRPC: { title: 'Extended Discord RPC', type: 'bool', desc: 'Adds Github + Discord buttons to RPC. No effect if RPC is off.', safety: 0, cat: 0, instant: true },
 	hideAds: { title: 'Hide/Block Ads', type: 'sel', desc: 'With \'hide\' you can still claim free KR. Using \'block\' also blocks trackers.', safety: 0, cat: 0, refreshOnly: true, opts: ['block', 'hide', 'off'] },
